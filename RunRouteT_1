@@ -258,10 +258,13 @@ T_2_ls = list(set(T_2_ls))
 # 300个 7s
 # 400个 13s
 
+
+N_exper = 100
+
 print('T_1 set to '+str(T_1))
 print('N_exper set to '+str(N_exper))
 
-N_exper = 100
+
 route_result_ls = []
 with progressbar.ProgressBar(max_value=N_exper) as bar:
     for i in range(N_exper):
