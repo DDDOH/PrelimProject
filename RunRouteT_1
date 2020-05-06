@@ -341,7 +341,7 @@ with progressbar.ProgressBar(max_value=N_exper) as bar:
 
         route_result_ls.append(vehicle_route)
 
-        print('now '+ time.asctime( time.localtime(time.time()) ) + '  i: '+str(i) + 'ETA: ' + str((N_exper - i)*(time.time() - prev_time)))
+        print('now '+ time.asctime( time.localtime(time.time()) ) + '  i: '+str(i) + '   ETA: ' + str((N_exper - i)*(time.time() - prev_time)))
 
         prev_time = time.time()
 

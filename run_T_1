@@ -21,9 +21,9 @@
 # echo "hello world"
 # conda init bash
 # conda activate py3
-python -u RunRouteT_1 1 100 > T_1_1_N_exper_100.txt
-python -u RunRouteT_1 2 100 > T_1_2_N_exper_100.txt
-python -u RunRouteT_1 3 100 > T_1_3_N_exper_100.txt
-python -u RunRouteT_1 4 100 > T_1_4_N_exper_100.txt
-python -u RunRouteT_1 5 100 > T_1_5_N_exper_100.txt
-python -u RunRouteT_1 6 100 > T_1_6_N_exper_100.txt
+python -u RunRouteT_1 1 100 > result/T_1_1_N_exper_100.txt
+python -u RunRouteT_1 2 100 > result/T_1_2_N_exper_100.txt
+python -u RunRouteT_1 3 100 > result/T_1_3_N_exper_100.txt
+python -u RunRouteT_1 4 100 > result/T_1_4_N_exper_100.txt
+python -u RunRouteT_1 5 100 > result/T_1_5_N_exper_100.txt
+python -u RunRouteT_1 6 100 > result/T_1_6_N_exper_100.txt
