@@ -265,12 +265,12 @@ print('T_1 set to '+str(T_1))
 print('N_exper set to '+str(N_exper))
 print('start solving at '+time.asctime( time.localtime(time.time()) ))
 
-
+prev_time = time.time()
 route_result_ls = []
 with progressbar.ProgressBar(max_value=N_exper) as bar:
     for i in range(N_exper):
         bar.update(i)
-        print('now '+ time.asctime( time.localtime(time.time()) ) + 'i: '+str(i))
+        
 
         N_order_each_day = np.random.normal(loc=100,scale=10*(2)**(1/2),size=T_1).astype(int)
         N_order_step1 = np.sum(N_order_each_day)    
@@ -340,6 +340,10 @@ with progressbar.ProgressBar(max_value=N_exper) as bar:
         L_i = [vehicle_route[x]['distance'] for x in vehicle_route]
 
         route_result_ls.append(vehicle_route)
+
+        print('now '+ time.asctime( time.localtime(time.time()) ) + '  i: '+str(i) + 'ETA: ' + (N_exper - i)*(time.time() - prev_time))
+
+        prev_time = time.time()
 
 # cost_result_ls = []
 # dist_result_ls = []
