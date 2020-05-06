@@ -1,0 +1,5 @@
+N/A% (0 of 10) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+Traceback (most recent call last):
+  File "RunRouteT_1", line 344, in <module>
+    print('now '+ time.asctime( time.localtime(time.time()) ) + '  i: '+str(i) + 'ETA: ' + (N_exper - i)*(time.time() - prev_time))
+TypeError: can only concatenate str (not "float") to str

@@ -1,0 +1,5 @@
+N/A% (0 of 10) |                         | Elapsed Time: 0:00:00 ETA:  --:--:--
+Traceback (most recent call last):
+  File "RunRouteT_1", line 273, in <module>
+    print('now '+print('start solving at '+time.asctime( time.localtime(time.time()) )) + 'i: '+str(i))
+TypeError: can only concatenate str (not "NoneType") to str
