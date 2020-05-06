@@ -1,0 +1,29 @@
+#!/bin/bash
+# Job name:
+#SBATCH --job-name=test
+#
+# Account:
+#SBATCH --account=fc_nonsta
+#
+# Partition:
+#SBATCH --partition=savio2
+#
+# Quality of Service:
+#SBATCH --qos=savio_normal
+#
+# Wall clock limit:
+#SBATCH --time=50:00:30
+
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=yufeng_zheng@berkeley.edu
+#
+## Command(s) to run:
+# echo "hello world"
+# conda init bash
+# conda activate py3
+python -u RunRouteT_1 1 100 > T_1_1_N_exper_100.txt
+python -u RunRouteT_1 2 100 > T_1_2_N_exper_100.txt
+python -u RunRouteT_1 3 100 > T_1_3_N_exper_100.txt
+python -u RunRouteT_1 4 100 > T_1_4_N_exper_100.txt
+python -u RunRouteT_1 5 100 > T_1_5_N_exper_100.txt
+python -u RunRouteT_1 6 100 > T_1_6_N_exper_100.txt
