@@ -19,6 +19,7 @@ import sys
 T_1 = int(sys.argv[1])
 
 
+N_exper = int(sys.argv[2])
 
 
 # %%
@@ -259,7 +260,6 @@ T_2_ls = list(set(T_2_ls))
 # 400个 13s
 
 
-N_exper = 100
 
 print('T_1 set to '+str(T_1))
 print('N_exper set to '+str(N_exper))
