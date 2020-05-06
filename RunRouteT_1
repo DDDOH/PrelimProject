@@ -46,7 +46,7 @@ def print_solution(data, manager, routing, solution):
     # [END solution_printer]
 
 # %%
-ascii_grid = np.loadtxt("/Users/shuffle_new/Desktop/Prelim/Modeling/Data/gpw-v4-population-density-adjusted-to-2015-unwpp-country-totals-rev11_2020_30_min_asc/gpw_v4_population_density_adjusted_to_2015_unwpp_country_totals_rev11_2020_30_min.asc", skiprows=6)
+ascii_grid = np.loadtxt("/global/home/users/zyzheng/PrelimProject/Data/gpw-v4-population-density-adjusted-to-2015-unwpp-country-totals-rev11_2020_30_min_asc/gpw_v4_population_density_adjusted_to_2015_unwpp_country_totals_rev11_2020_30_min.asc", skiprows=6)
 order_density = ascii_grid
 order_density[order_density == -9999] = 0
 order_density[order_density > 200] = 200
