@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
@@ -220,8 +221,11 @@ plt.plot(D_ls, cost_fuel_ls)
 # 3	ROUTING_FAIL_TIMEOUT: Time limit reached before finding a solution.
 # 4	ROUTING_INVALID: Model, model parameters, or flags are not valid.
 
+
+
 # %% [markdown]
 # # 订单多了，接T_1天，拒绝T_2天，用T_1+T_2天配送
+
 
 # %%
 # bin packing problem
