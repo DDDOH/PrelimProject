@@ -13,6 +13,11 @@ import pandas as pd
 import progressbar
 import cvxpy as cp
 import pickle as pkl
+import sys
+
+T_1 = int(sys.argv[0])
+
+
 
 
 # %%
@@ -243,13 +248,14 @@ T_2_ls = list(set(T_2_ls))
 
 
 # %%
-T_1 = 1
 
 
 # 200个 3s
 # 300个 7s
 # 400个 13s
 
+print('T_1 set to '+str(T_1))
+print('N_exper set to '+str(N_exper))
 
 N_exper = 100
 route_result_ls = []
@@ -332,3 +338,5 @@ with progressbar.ProgressBar(max_value=N_exper) as bar:
 # route_combo_result_ls = []
 with open('result/route_result_ls N_exper:{} T_1:{}'.format(N_exper, T_1), 'wb') as file:
     pkl.dump(route_result_ls, file)
+
+print('result pickle file saved')
