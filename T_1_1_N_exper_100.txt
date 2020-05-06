@@ -1,0 +1,2 @@
+T_1 set to 1
+N_exper set to 100
