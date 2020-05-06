@@ -46,6 +46,10 @@ multi depot，然后相当于single depot，一个起点，这个起点到multi 
 
 实验4: 订单多了，然后订单服从xx分布，sample 多次node，看看分车有没有规律
 
+这个要求的计算量特别大，再看看吧
+
+
+
 
 
 ---
