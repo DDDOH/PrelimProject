@@ -16,7 +16,8 @@ import cvxpy as cp
 import pickle as pkl
 import sys
 
-T_1 = int(sys.argv)
+print(sys.argv)
+T_1 = int(sys.argv[0])
 
 
 
