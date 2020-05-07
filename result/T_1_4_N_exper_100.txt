@@ -1,0 +1,4 @@
+T_1 set to 4
+N_exper set to 100
+start solving at Wed May  6 05:14:50 2020
+now Wed May  6 05:15:14 2020  i: 2   ETA: 2324.4889965057373
